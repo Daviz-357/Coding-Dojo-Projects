@@ -1,0 +1,20 @@
+#container{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.left{
+    width: 30%;
+    background-color: red;
+}
+.center{
+    width: 20%;
+    background-color: white;
+}
+.right{
+    width: 30%;
+    background-color: red;
+}
