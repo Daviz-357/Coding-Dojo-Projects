@@ -1,0 +1,24 @@
+.row{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.col, .col2, .col3{
+    background-color: cadetblue;
+    margin: 5px;
+    height: 100px;
+}
+
+.col{
+    flex: 1;
+}
+
+.row, .col2{
+    flex: 2;
+}
+
+.row, .col3{
+    flex: 3;
+}
