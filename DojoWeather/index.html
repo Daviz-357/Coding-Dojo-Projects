@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Dojo Weather</h1>
+            <ul>
+                <li><a onclick="select(this)" href="#">Burbank</a></li>
+                <li><a onclick="select(this)" href="#">Chicago</a></li>
+                <li><a onclick="select(this)" href="#">Dallas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="san-jose">
+            <h2>San Jose</h2>
+            <form>
+                <label>show temperature in:</label>
+                <select id="type" onchange="select_type()">
+                    <option value="celsius" selected>C</option>
+                    <option value="fahrenheit">F</option>
+                </select>
+            </form>
+        </div>
+
+    <div class="week-container">
+        <div class="week">
+            <div class="day">
+                <h3>Monday</h3>
+                <img class="weather-icon" src="" alt="">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <span class="max temp1">24°</span>
+                    <span class="min temp2">18°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <h3>Tuesday</h3>
+                <img class="weather-icon" src="" alt="">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <span class="max temp3">24°</span>
+                    <span class="min temp4">18°</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <h3>Wednesday</h3>
+                <img class="weather-icon" src="" alt="">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <span class="max temp5">24</span>
+                    <span class="min temp6">18</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <h3>Thursday</h3>
+                <img class="weather-icon" src="" alt="">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <span class="max temp7">24</span>
+                    <span class="min temp8">18</span>
+                </div>
+            </div>
+
+            <div class="day">
+                <h3>Friday</h3>
+                <img class="weather-icon" src="" alt="">
+                <p>some rain</p>
+                <div class="temperaturas">
+                    <span class="max temp9">26°</span>
+                    <span class="min temp10">21°</span>
+                </div>
+            </div>
+
+    </div>
+        </div>
+
+    </main>
+    <footer>
+         <div id="cookie-message" class="cookie">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="cookie-text">
+                <h4>Stop! Cookie time</h4>
+                <p> We use cookies (sadly not the edible ones) to personalize <br>
+                content and ads, to provide social media features and to <br>
+                analyse our traffic. <a href="#">Read more</a>
+                </p>
+            </div>
+            <button class="btnAccept" onclick="aceptarCookies()">I Accept</button>
+        </div>
+    </footer>
+
+    <script src="js/scrpit.js"></script>
+</body>
+</html>
